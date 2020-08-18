@@ -4,15 +4,15 @@ This pipeline is used to perform the phylogenetics and population genetic analys
 
 **GetPeaks**: automatic calculate the heteroduplex mobility distance from the results of LabChip GX software.
 
-**HMA_pairwise_analysis.R**:  
+**HMA_pairwise_analysis.R**: script for phylogenetic analysis with bootstrapping and skyline plots to estimate the demographic history of a population using heteroduplex mobility distances, as well as comparing these results with the same analyses based on nucleotide sequences.
+
+**HMA_mismatch_optimization.R**: 
 
 ## Requirements
 - g++
 - RStudio 
-- Geneious 
 - BEAST 
 - Tracer 
-- IQ-TREE
 
 ## Install
 ```
