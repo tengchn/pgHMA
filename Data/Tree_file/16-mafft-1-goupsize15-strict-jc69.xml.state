@@ -1,0 +1,18 @@
+<itsabeastystatewerein version='2.0' sample='10000000'>
+<statenode id='Tree.t:16KAN-CL-mafft-realigned'>(((0:0.001259113691919061,9:0.001259113691919061)29:0.05425651258137593,((1:0.009604644156674086,((12:0.0040270194773423,14:0.0040270194773423)24:0.0021589605726839746,15:0.006185980050026275)20:0.0034186641066478113)27:0.01692421634424101,(5:0.015625177564876275,(6:0.004264881502166191,11:0.004264881502166191)19:0.011360296062710083)28:0.01090368293603882)21:0.0289867657723799)23:0.04258390042342357,(((2:0.010381882738064271,10:0.010381882738064271)26:0.003444346741758123,((3:0.004366162261205162,8:0.004366162261205162)18:0.007831330854529847,(4:0.0021773188975616167,13:0.0021773188975616167)16:0.010020174218173394)22:0.001628736364087384)17:0.011844147952071058,7:0.025670377431893453)25:0.0724291492648251)30:0.0</statenode>
+<statenode id='bPopSizes.t:16KAN-CL-mafft-realigned'>bPopSizes.t:16KAN-CL-mafft-realigned[15 1] (0.0,380000.0): 0.08674586990321966 0.11172698794180058 0.11520233165518967 0.28349277064317485 0.15640647603790514 0.07493315268075788 0.08459029671620887 0.04935278239592778 0.11830295324463416 0.06816674695981507 0.07340013216354295 0.05415821747118189 0.0498636249460618 0.07517371463656163 0.056846716633008845 </statenode>
+<statenode id='bGroupSizes.t:16KAN-CL-mafft-realigned'>bGroupSizes.t:16KAN-CL-mafft-realigned[15 1] (1,1): 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"BayesianSkylineTreeScaler.t:16KAN-CL-mafft-realigned","p":0.7298294325629021,"accept":67503,"reject":254763,"acceptFC":67427,"rejectFC":254118,"rejectIv":0,"rejectOp":0},
+{"id":"BayesianSkylineTreeRootScaler.t:16KAN-CL-mafft-realigned","p":0.6894766954115855,"accept":64668,"reject":258859,"acceptFC":64595,"rejectFC":258231,"rejectIv":82,"rejectOp":82},
+{"id":"BayesianSkylineUniformOperator.t:16KAN-CL-mafft-realigned","p":"NaN","accept":652573,"reject":2571618,"acceptFC":650879,"rejectFC":2566079,"rejectIv":0,"rejectOp":0},
+{"id":"BayesianSkylineSubtreeSlide.t:16KAN-CL-mafft-realigned","p":0.20128343092667667,"accept":13606,"reject":1600357,"acceptFC":13597,"rejectFC":1596767,"rejectIv":769639,"rejectOp":769639},
+{"id":"BayesianSkylineNarrow.t:16KAN-CL-mafft-realigned","p":"NaN","accept":101489,"reject":1512166,"acceptFC":101257,"rejectFC":1508886,"rejectIv":0,"rejectOp":0},
+{"id":"BayesianSkylineWide.t:16KAN-CL-mafft-realigned","p":"NaN","accept":886,"reject":321394,"acceptFC":885,"rejectFC":320723,"rejectIv":166606,"rejectOp":166606},
+{"id":"BayesianSkylineWilsonBalding.t:16KAN-CL-mafft-realigned","p":"NaN","accept":397,"reject":322263,"acceptFC":393,"rejectFC":321556,"rejectIv":67375,"rejectOp":67375},
+{"id":"popSizesScaler.t:16KAN-CL-mafft-realigned","p":0.1949251887771603,"accept":451724,"reject":1160943,"acceptFC":448864,"rejectFC":1160205,"rejectIv":0,"rejectOp":0},
+{"id":"groupSizesDelta.t:16KAN-CL-mafft-realigned","p":0.5000008863935248,"accept":0,"reject":644792,"acceptFC":0,"rejectFC":643410,"rejectIv":644792,"rejectOp":644792}
+]}
+-->
