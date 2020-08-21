@@ -2,11 +2,11 @@
 
 This pipeline is used to perform the phylogenetics and population genetic analyses based on heteroduplex mobility data, with the comparison of related analyses from DNA sequences.
 
-**GetPeaks**: automatic calculate the heteroduplex mobility distance from the results of LabChip GX software.
+**GetPeaks**: automatic calculate the heteroduplex mobility distance from the results of LabChip GX software. *Contributed by Thomas Wong.*
 
-**HMA_pairwise_analysis.R**: script for phylogenetic analysis with bootstrapping and skyline plots to estimate the demographic history of a population using heteroduplex mobility distances, as well as comparing these results with the same analyses based on nucleotide sequences.
+**HMA_pairwise_analysis.R**: R script for phylogenetic analysis with bootstrapping and skyline plots to estimate the demographic history of a population using heteroduplex mobility distances, as well as comparing these results with the same analyses based on nucleotide sequences.
 
-**HMA_mismatch_optimization.R**: 
+**HMA_mismatch_optimization.R**: R script for optimizing frequency distributions of heteroduplex mobility distances to minimize the differences of mismatch distributions obtained using nucleotide sequences, and plot related figures for each mixture with before and after optimization.
 
 ## Requirements
 - g++
@@ -48,4 +48,8 @@ To identify the homo-duplex and hetero-duplex, assuming it is a mixture of TWO s
   Usage: ./getPeaks compute Data/Raw data from LabChip GXII/LabChip output for 16Kangaroos pairwise combination.csv -m 11.92 -n 22.65
 
 NOTE: If some samples have errors in the output file, please visualize and check these samples with LabChip GX software as there may have erroneous peaks caused by signal noise.
+```
+**HMA_pairwise_analysis.R and HMA_mismatch_optimization.R**
+```
+Usage: import and run the scripts for all analyses in RStudio.
 ```
