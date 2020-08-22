@@ -51,5 +51,5 @@ NOTE: If some samples have errors in the output file, please visualize and check
 ```
 **HMA_pairwise_analysis.R and HMA_mismatch_optimization.R**
 ```
-Usage: import and run the scripts for all analyses in RStudio.
+Usage: run the scripts for all analyses in RStudio.
 ```
