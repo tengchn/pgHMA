@@ -131,9 +131,8 @@ for (j in 1:np){
   tr_ober16$edge.length <- pmax(tr_ober16$edge.length,0)
   write.tree(tr_ober16,file="Data/Tree_file/10000bp_tree_HMA_upgma.tre",append = T)
 }
-#Load the UPGMA trees file with first 10% trees discarded
+#Load the UPGMA trees file
 all_upgma_tre<-read.newick(file="Data/Tree_file/10000bp_tree_HMA_upgma.tre")
-all_upgma_tre<-all_upgma_tre[c(floor(0.1 * length(all_upgma_tre)):length(all_upgma_tre))]
 #Set the function for finding the lower 95% HPD of the matrix
 library(HDInterval)
 get_lower_HPD <- function(x,y) {
