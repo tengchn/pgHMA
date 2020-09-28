@@ -162,7 +162,7 @@ cores=detectCores()
 cl <- makeCluster(cores[1]-2) #not to overload your computer
 registerDoParallel(cl)
 finalMatrix_upgma<-data.frame(matrix(ncol=1000,nrow=length(all_upgma_tre)))
-lower_HPD_HMA<-get_lower_HPD(all_upgma_tre,1e-7) # set epsilon = 1e-7, as few trees coalescent intervals = 0 if set epsilon = 0
+lower_HPD_HMA<-get_lower_HPD(all_upgma_tre,1e-7) # set epsilon = 1e-7, as few trees coalescent interval length = 0 if set epsilon = 0
 finalMatrix_upgma <- foreach(i=1:length(all_upgma_tre), .combine=rbind) %dopar% {
   library(ape)
   library(phangorn)
