@@ -20,6 +20,8 @@ git clone https://github.com/tengchn/pgHMA.git
 cd GetPeaks
 #To compile the program of getPeaks
 g++ -o getPeaks getPeaks.cpp
+```
+```
 #To install the R package of pgHMAtools in R
 devtools::install_github("tengchn/pgHMA/pgHMAtools")
 ```
