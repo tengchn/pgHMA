@@ -4,22 +4,24 @@ This pipeline is used to perform the phylogenetics and population genetic analys
 
 **GetPeaks**: automatic calculate the heteroduplex mobility distance from the results of LabChip GX software. *Contributed by Thomas Wong.*
 
+**pgHMAtools**: R package including some useful tools for pgHMA analyses.
+
 **HMA_pairwise_analysis.R**: R script for phylogenetic analysis with bootstrapping and skyline plots to estimate the demographic history of a population using heteroduplex mobility distances, as well as comparing these results with the same analyses based on nucleotide sequences.
 
 **HMA_mismatch_optimization.R**: R script for optimizing frequency distributions of heteroduplex mobility distances to minimize the differences of mismatch distributions obtained using nucleotide sequences, and plot related figures for each mixture with before and after optimization.
 
 ## Requirements
 - g++
-- RStudio 
-- BEAST 
-- Tracer 
+- RStudio
 
 ## Install
 ```
 git clone https://github.com/tengchn/pgHMA.git
 cd GetPeaks
-#To compile the program
+#To compile the program of getPeaks
 g++ -o getPeaks getPeaks.cpp
+#To install the R package of pgHMAtools in R
+devtools::install_github("tengchn/pgHMA/pgHMAtools")
 ```
 
 ## Usage
