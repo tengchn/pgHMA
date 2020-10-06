@@ -27,7 +27,7 @@ df16_DNA<-df16
 tr_real_16<-nj(df16_DNA)
 plot(midpoint.root(tr_real_16))
 add.scale.bar()
-write.tree(tr_ober_16,file = "Data/Tree_file/DNA_nj.tre")
+write.tree(tr_real_16,file = "Data/Tree_file/DNA_nj.tre")
 #Construct NJ tree based on HMA data
 df16[lower.tri(df16)]<-pair_data$ober
 df16<-t(df16)
