@@ -15,7 +15,7 @@ y<-c("KS1","KS2","KS3","KS4","KS5","KS6","KS8","KD1","KD2","KD3","KD4","KD5","KD
 rownames(df16)<-x
 colnames(df16)<-y
 df16
-#Import distance data of nucleotide data and HMA data
+#Import distance matrix of nucleotide data and HMA data
 #pair_data<-read.csv("Data/HMA-16-ober-real.csv")
 data(pair_data)
 head(pair_data)
@@ -41,7 +41,6 @@ write.tree(tr_ober_16,file = "Data/Tree_file/HMA_nj.tre")
 #Compare these two trees Robinson-Foulds (RF) distance
 RF.dist(tr_ober_16,tr_real_16)
 
-
 #2.Correlation analysis between HMA and nucleotide sequencing data
 #Plot the data
 plot(pair_data$ober, pair_data$real, xlab="Heteroduplex distace", ylab="Nucleotide distance",cex = 1, pch = 21, bg = 'gray')
@@ -52,7 +51,6 @@ plot_lm(pair_data) #call the function plot_lm from pgHMAtools
 #Summary of the linear regression
 summary(lm.out)
 summary(conf_interval)
-
 
 #3.Parametric bootstrap sampling using the predict interval
 np<-10000
@@ -67,22 +65,6 @@ for (j in 1:np){
   tr_ober16$edge.length <- pmax(tr_ober16$edge.length,0) #Change the negative edge length value to 0
   write.tree(tr_ober16,file="Data/Tree_file/10000bp_tree_HMA_nj.tre",append = T)
 }
-
-#Phylogenetic analysis with the expected genetic distance matrix obtained from the linear regression
-df16<-data.frame(matrix(0,ncol=16,nrow=16))
-x<-c("KS1","KS2","KS3","KS4","KS5","KS6","KS8","KD1","KD2","KD3","KD4","KD5","KD6","KD7","KF1","KS7")
-y<-c("KS1","KS2","KS3","KS4","KS5","KS6","KS8","KD1","KD2","KD3","KD4","KD5","KD6","KD7","KF1","KS7")
-rownames(df16)<-x
-colnames(df16)<-y
-df16[lower.tri(df16)]<-conf_interval[,1]
-df16<-t(df16)
-df16[lower.tri(df16)]<-conf_interval[,1]
-df16_fitted<-df16
-tr_ober16_fitted<-nj(df16_fitted)
-plot(midpoint.root(tr_ober16_fitted))
-add.scale.bar()
-write.tree(tr_ober16_fitted,file = "Data/Tree_file/HMA_fitted_nj.tre")
-
 
 #4.Skyline plot analyses
 #Parametric bootstrap sampling using UPGMA for HMA data
