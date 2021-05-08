@@ -134,10 +134,10 @@ P4<-Skyline_plot(times_beast_slide, Re_hpd_beast_slide, xlab="Mutational units",
 library(gridExtra)
 grid.arrange(P1, P2, P3, P4, ncol=2)
 #Plot two results without sliding window in one figure
-P1_pretty<-Skyline_plot(times_hma, Re_hdi_hma, xlab="Mutational units", ylab="Population size", main="A) Skyline plot based on HMA data", ylims = c(0.001,0.601))
-P3_pretty<-Skyline_plot(times_beast, Re_hpd_beast, xlab="Mutational units", ylab="Population size", main="B) Skyline plot based on nucleotide data", ylims = c(0.001,0.601))
+P1_pretty<-Skyline_plot(times_hma, Re_hdi_hma, xlab="Mutational units", ylab="Population size", main="A) Skyline plot based on HMA data", ylims = c(0.001,0.601), base_size = 16)
+P3_pretty<-Skyline_plot(times_beast, Re_hpd_beast, xlab="Mutational units", ylab="Population size", main="B) Skyline plot based on nucleotide data", ylims = c(0.001,0.601), base_size = 16)
 grid.arrange(P1_pretty,P3_pretty, ncol=2)
 #Plot two results with sliding window in one figure
-P2_pretty<-Skyline_plot(times_hma_slide, Re_hdi_hma_slide, xlab="Mutational units", ylab="Population size", main="A) Skyline plot based on HMA data", ylims = c(0.001,0.4))
-P4_pretty<-Skyline_plot(times_beast_slide, Re_hpd_beast_slide, xlab="Mutational units", ylab="Population size", main="B) Skyline plot based on nucleotide data", ylims = c(0.001,0.4))
+P2_pretty<-Skyline_plot(times_hma_slide, Re_hdi_hma_slide, xlab="Mutational units", ylab="Population size", main="A) Skyline plot based on HMA data", ylims = c(0.001,0.4), base_size = 16)
+P4_pretty<-Skyline_plot(times_beast_slide, Re_hpd_beast_slide, xlab="Mutational units", ylab="Population size", main="B) Skyline plot based on nucleotide data", ylims = c(0.001,0.4), base_size = 16)
 grid.arrange(P2_pretty,P4_pretty, ncol=2)
