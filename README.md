@@ -57,3 +57,19 @@ NOTE: If some samples have errors in the output file, please visualize and check
 ```
 Usage: run the scripts for all analyses in RStudio.
 ```
+
+## Citation
+Please cite using the following bibtex entries.
+```
+@article{https://doi.org/10.1111/1755-0998.13508,
+author = {Li, Teng and Wong, Thomas K. F. and Ranjard, Louis and Rodrigo, Allen G.},
+title = {pgHMA: Application of the heteroduplex mobility assay analysis in phylogenetics and population genetics},
+journal = {Molecular Ecology Resources},
+volume = {22},
+number = {2},
+pages = {653-663},
+doi = {https://doi.org/10.1111/1755-0998.13508},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-0998.13508},
+year = {2022}
+}
+```
